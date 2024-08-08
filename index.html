@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Paradise</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <h1>Ice Cream Paradise</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#flavors">Flavors</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#cart" class="cart"
+              ><i class="fas fa-shopping-cart"></i> Cart</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <video autoplay muted loop class="hero-video">
+        <source src="./videos/ice-hero.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="hero-content">
+        <h1 class="hero-title" data-aos="fade-down">
+          Welcome to the World of Ice Cream!
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up">
+          Discover the best flavors in town.
+        </p>
+        <a href="#flavors" class="cta-button" data-aos="zoom-in"
+          >Explore Flavors</a
+        >
+      </div>
+    </section>
+
+    <!-- Flavors Section -->
+    <section id="flavors" class="flavors-section">
+      <h2 data-aos="fade-right">Our Flavors</h2>
+      <div class="flavor-carousel">
+        <div class="flavor-carousel-inner">
+          <!-- Example Flavor Card -->
+          <div class="flavor-card" data-aos="flip-left">
+            <img src="images/vanilla.jpg" alt="Vanilla" />
+            <h3>Vanilla</h3>
+            <p>Classic and creamy vanilla flavor.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <!-- Add more flavor cards here -->
+          <div class="flavor-card" data-aos="flip-left">
+            <img src="images/Strawberry.png" alt="Strawberry" />
+            <h3>Strawberry</h3>
+            <p>Fresh and fruity strawberry flavor.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="flavor-card" data-aos="flip-left">
+            <img src="images/Chocolate.png" alt="Chocolate" />
+            <h3>Chocolate</h3>
+            <p>Rich and creamy chocolate flavor.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="flavor-card" data-aos="flip-left">
+            <img src="images/Pista.jpg" alt="Pista" />
+            <h3>Pista</h3>
+            <p>Nutty and delicious pistachio flavor.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="flavor-card" data-aos="flip-left">
+            <img src="images/Cherry.jpg" alt="Cherry" />
+            <h3>Cherry</h3>
+            <p>Sweet and tangy cherry flavor.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About and Contact Section -->
+    <section id="about-contact" class="about-contact-section">
+      <div class="about-section">
+        <h2 data-aos="fade-left">About Us</h2>
+        <p data-aos="fade-up">
+          Welcome to Ice Cream Paradise, where we are passionate about crafting
+          the finest ice cream. Established in 2020, our mission is to bring joy
+          through delicious, high-quality ice cream made from the freshest
+          ingredients. Our flavors are inspired by both classic favorites and
+          innovative new combinations, ensuring there's something for everyone.
+          From the rich and creamy vanilla to the exotic pista, each flavor is
+          crafted with care and dedication. Join us on a delightful journey of
+          taste and experience the best ice cream in town!
+        </p>
+      </div>
+      <div class="contact-section">
+        <h2 data-aos="fade-right">Contact Us</h2>
+        <form id="contact-form" data-aos="zoom-in">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Ice Cream Paradise. All rights reserved.</p>
+      <ul class="social-links">
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
